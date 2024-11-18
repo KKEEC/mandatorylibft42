@@ -6,7 +6,7 @@
 /*   By: kkc <kkc@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 19:29:03 by kkc               #+#    #+#             */
-/*   Updated: 2024/11/12 09:26:29 by kkc              ###   ########.fr       */
+/*   Updated: 2024/11/18 13:30:15 by kkc              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -34,7 +34,7 @@ static void	bwd(unsigned char *to, const unsigned char *from, size_t size)
 
 void	*ft_memmove(void *to, const void *from, size_t size)
 {
-	if (!to || !from)
+	if (!from && !to)
 		return (NULL);
 	if (to < from)
 		fwd((unsigned char *)to, (const unsigned char *)from, size);

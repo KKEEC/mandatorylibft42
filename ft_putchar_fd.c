@@ -6,14 +6,11 @@
 /*   By: kkc <kkc@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 16:07:20 by kkc               #+#    #+#             */
-/*   Updated: 2024/11/13 16:41:47 by kkc              ###   ########.fr       */
+/*   Updated: 2024/11/18 15:36:49 by kkc              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <fcntl.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
